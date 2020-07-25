@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM targeting methods</title>
+
+    <!-- Including J-query file -->
+
+    <script src="/Jquery/jquery-3.5.1.js"></script>
+
+</head>
+<body>
+
+    <script>
+
+        // DOM targeting methods.
+
+        /*
+
+            In this dom target we have 4 kinds of sections,
+
+            1) Ancestors method (পূর্বপুরুষ). 
+
+            2) Descendants methods (সন্তান).
+
+            3) Siblings methods.
+
+            4) Filtering methods
+
+            Ancestors methods,
+
+            --------------------------------------------------------------------------------------------------------------
+
+            1) parent(); Target only the main parent.
+
+                EX, 
+
+                <div>
+
+                    <span>
+
+                        <h1> CHILD <h1>
+
+                    </span>
+
+                </div>
+
+            If target is h1 the parent() will target span.
+
+            2) parents(); Will target all teh parent.
+
+            EX, 
+
+                <div>
+
+                    <span>
+
+                        <h1> CHILD <h1>
+
+                    </span>
+
+                </div>
+
+            If target is h1 the parents() will target span, div.
+
+            3) parentsUntil(); Main parent to un-till how much parent by using selector.
+
+            EX,
+
+            $("span").parentsUntil("div");
+
+            4) offsetParent(); Target the first element of the selector which have CSS position property.
+
+            5) closet("tagname"); It will select closest tagname.
+
+            Descendants methods (সন্তান),
+
+            --------------------------------------------------------------------------------------------------------------
+
+            1) children(); This method will target all direct children. As well as we can select specific types of children by mention
+            children(".div1, div2 ....").
+
+            2)  find(); This method search specified element but in all lower tree that mean grand-children, great-grand-children.
+
+            --------------------------------------------------------------------------------------------------------------
+
+            Sibling method,
+            
+            1) siblings(); This method will be target all the siblings. 
+
+            2) next(); This method will be target only the next sibling.
+
+            3) nextAll(); This method will target all next siblings.
+
+            4) nextUntil("until"); This method will target all next sibling until it not find the specified selector.
+
+            5) prev(); Will target only the previous sibling.
+
+            6) prevAll(); Will target all the previous siblings.
+
+            7) prevUntil("until"); This method will target all previous sibling until it not find the specified selector.
+
+            --------------------------------------------------------------------------------------------------------------
+
+            Filter methods.
+
+            1) first(); This method will select first element of the inside of the selector.
+
+            2) last(); The last() method returns the last element of the inside of the selector.
+
+            3) eq(); The eq() method returns an element with a specific index number of the selected elements.
+
+            4) filter(); The filter() method lets you specify a criteria. Elements that do not match the criteria are removed from the 
+            selection, and those that match will be returned.
+
+            EX,
+
+            $(document).ready(function()
+            {
+
+                $("p").filter(".intro");
+
+            });
+
+            5) not(); The not() method returns all elements that do not match the criteria.
+
+            EX,
+
+            $(document).ready(function()
+            {
+
+                $("p").not(".intro");
+
+            });
+
+        */
+
+
+    </script>
+    
+</body>
+</html>

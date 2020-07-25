@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J-query events</title>
+    
+    <!-- Including the J-query file -->
+
+    <script src="/Jquery/jquery-3.5.1.js"></script>
+
+</head>
+<body>
+
+    <script>
+
+        $(document).ready(function()
+        {
+
+            // How to add events, 
+            
+            /*
+            
+                1) Target where want to add the event.
+                2) Call the event using . operator.
+                3) On the particular event if we want to do any thing then call a anonymous function then we can do anything 
+                inside of the anonymous function.
+
+                EX,
+
+                x = targeted element;
+
+                x.event(function()
+                {
+
+                    // We can code whatever we want to do.
+
+                });
+
+
+
+            */
+
+            // Mouse events.
+            
+            /*
+            
+                1) .click(); A normal right click.
+
+                2) .dblclick(); Double click.
+
+                3) .mouseenter(); Hover.
+
+                4) .mouseleave(); Hover our.
+
+                5) .mousedown(); When the left, middle or right mouse button is pressed down.
+
+                6) .mouseup(); When the left, middle or right mouse button is released.
+                
+                7) .hover(function(){Mouse enter}, function(){Mouse leave});
+            
+            */
+
+
+            // Form events.
+
+            /*
+            
+                1) .focus(); When we will click on any form element then on this time this event will be call.
+
+                2) .blur(); Inverse of focus.
+
+                3) .change(); If we change any value from the select box then this event will be click.
+
+                4) .select(); When we will select any text in an input box then this event will be call.
+
+                5) .submit(); When we will call the submit button then this event will be call.
+                
+                
+            
+            */
+
+            // Windows events.
+
+            /*
+            
+                To target window over there we can use window object, EX: $(window)
+
+                1) .scroll(); When will be scroll on the targeted element.
+
+                2) .resize(); When will be resize targeted element.
+
+                3) .on(); We can use multiple events on the targeted element.
+
+                EX of on,
+
+
+                $("target").on
+                ({
+
+                    "Event1" : function(){},
+
+                    "Event2" : function(){},
+
+                    "Event3" : function(){},
+
+                    "Event4" : function(){},
+
+
+                });
+
+                4) .off(); We can remove events which events we was set using .on() method.
+
+                EX of off,
+
+                $("target").off
+                (
+
+                    "Event1"
+
+                    "Event2"
+
+                    "Event3"
+
+                    "Event4"
+
+
+                );
+                
+            
+            */
+
+        });
+
+    </script>
+    
+</body>
+</html>
